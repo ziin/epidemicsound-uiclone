@@ -3,25 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: 0, 0%, 6%;
+
+  --foreground: 0 0% 100%;
+  --foreground-hovered: 0 0% 90.59%;
+  --foreground-pressed: 0 0% 81.18%;
+  --foreground-muted: 0 0% 52.94%;
+
+  --accent: 230.3 100% 61.18%;
+  --accent-hovered: 230.22 78.76% 55.69%;
+  --accent-pressed: 230.51 62.2% 50.2%;
+
+  --btn: 0, 0%, 12%;
+  --btn-hovered: 0, 0%, 17%;
+  --btn-pressed: 0, 0%, 25%;
+
+  --card: 0, 0%, 12%;
+
+  --btn-brighter: 0, 0%, 18%;
+  --btn-brighter-hovered: 0, 0%, 23%;
+  --btn-brighter-pressed: 0, 0%, 31%;
+
+  --purple: 256, 100%, 62%;
+
+  --ring: 0 0% 100%;
+  --radius: 0.125rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
