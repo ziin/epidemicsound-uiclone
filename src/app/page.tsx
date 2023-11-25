@@ -5,6 +5,7 @@ import { SoundtrackSection } from "~/components/home/soundtrack";
 import { CalloutSection } from "~/components/home/callout";
 import { SubscriptionSection } from "~/components/home/subscription";
 import { UnlimitedSection } from "~/components/home/unlimited";
+import { RightsIncludedSection } from "~/components/home/rights-included";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <CalloutSection />
       <SubscriptionSection />
       <UnlimitedSection />
+      <RightsIncludedSection />
     </main>
   );
 }
