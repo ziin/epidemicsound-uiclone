@@ -4,6 +4,7 @@ import { MusicCategorySection } from "~/components/home/music-category";
 import { SoundtrackSection } from "~/components/home/soundtrack";
 import { CalloutSection } from "~/components/home/callout";
 import { SubscriptionSection } from "~/components/home/subscription";
+import { UnlimitedSection } from "~/components/home/unlimited";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SoundtrackSection />
       <CalloutSection />
       <SubscriptionSection />
+      <UnlimitedSection />
     </main>
   );
 }
